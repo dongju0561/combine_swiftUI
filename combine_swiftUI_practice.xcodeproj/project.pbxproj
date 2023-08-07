@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,14 +11,24 @@
 		4BEDE3A42A812C7100E49B99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEDE3A32A812C7100E49B99 /* ContentView.swift */; };
 		4BEDE3A62A812C7100E49B99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BEDE3A52A812C7100E49B99 /* Assets.xcassets */; };
 		4BEDE3A92A812C7100E49B99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BEDE3A82A812C7100E49B99 /* Preview Assets.xcassets */; };
+		4BEDE3B32A8132F800E49B99 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEDE3B22A8132F800E49B99 /* NetworkService.swift */; };
+		4BEDE3B52A8133BF00E49B99 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEDE3B42A8133BF00E49B99 /* ViewModel.swift */; };
+		4BEDE3B72A8133EF00E49B99 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEDE3B62A8133EF00E49B99 /* DataModel.swift */; };
+		AE9557AE153395C6472BF176 /* Pods_combine_swiftUI_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE6D06CBEC22675FAB706A0 /* Pods_combine_swiftUI_practice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16A7156FBD4023623367C161 /* Pods-combine_swiftUI_practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-combine_swiftUI_practice.debug.xcconfig"; path = "Target Support Files/Pods-combine_swiftUI_practice/Pods-combine_swiftUI_practice.debug.xcconfig"; sourceTree = "<group>"; };
+		3BE6D06CBEC22675FAB706A0 /* Pods_combine_swiftUI_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_combine_swiftUI_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BEDE39E2A812C7100E49B99 /* combine_swiftUI_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = combine_swiftUI_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BEDE3A12A812C7100E49B99 /* combine_swiftUI_practiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = combine_swiftUI_practiceApp.swift; sourceTree = "<group>"; };
 		4BEDE3A32A812C7100E49B99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BEDE3A52A812C7100E49B99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BEDE3A82A812C7100E49B99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4BEDE3B22A8132F800E49B99 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4BEDE3B42A8133BF00E49B99 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4BEDE3B62A8133EF00E49B99 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		7ED5E4C7C6AC99181CD24236 /* Pods-combine_swiftUI_practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-combine_swiftUI_practice.release.xcconfig"; path = "Target Support Files/Pods-combine_swiftUI_practice/Pods-combine_swiftUI_practice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9557AE153395C6472BF176 /* Pods_combine_swiftUI_practice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185E6BA6360F847F52C3C8F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BE6D06CBEC22675FAB706A0 /* Pods_combine_swiftUI_practice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4542B14A55C25B468814B362 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16A7156FBD4023623367C161 /* Pods-combine_swiftUI_practice.debug.xcconfig */,
+				7ED5E4C7C6AC99181CD24236 /* Pods-combine_swiftUI_practice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4BEDE3952A812C7100E49B99 = {
 			isa = PBXGroup;
 			children = (
 				4BEDE3A02A812C7100E49B99 /* combine_swiftUI_practice */,
 				4BEDE39F2A812C7100E49B99 /* Products */,
+				4542B14A55C25B468814B362 /* Pods */,
+				185E6BA6360F847F52C3C8F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				4BEDE3A12A812C7100E49B99 /* combine_swiftUI_practiceApp.swift */,
+				4BEDE3B12A81311800E49B99 /* Model */,
+				4BEDE3B02A81311200E49B99 /* ViewModel */,
+				4BEDE3AF2A81310900E49B99 /* View */,
 				4BEDE3A32A812C7100E49B99 /* ContentView.swift */,
 				4BEDE3A52A812C7100E49B99 /* Assets.xcassets */,
 				4BEDE3A72A812C7100E49B99 /* Preview Content */,
@@ -67,6 +100,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4BEDE3AF2A81310900E49B99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BEDE3B02A81311200E49B99 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4BEDE3B22A8132F800E49B99 /* NetworkService.swift */,
+				4BEDE3B42A8133BF00E49B99 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4BEDE3B12A81311800E49B99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BEDE3B62A8133EF00E49B99 /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BEDE3AC2A812C7100E49B99 /* Build configuration list for PBXNativeTarget "combine_swiftUI_practice" */;
 			buildPhases = (
+				42E981E6E4BAEE2A75421780 /* [CP] Check Pods Manifest.lock */,
 				4BEDE39A2A812C7100E49B99 /* Sources */,
 				4BEDE39B2A812C7100E49B99 /* Frameworks */,
 				4BEDE39C2A812C7100E49B99 /* Resources */,
+				E130F0337FBA64BA2BE988E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +162,7 @@
 				};
 			};
 			buildConfigurationList = 4BEDE3992A812C7100E49B99 /* Build configuration list for PBXProject "combine_swiftUI_practice" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,13 +191,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42E981E6E4BAEE2A75421780 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-combine_swiftUI_practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E130F0337FBA64BA2BE988E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-combine_swiftUI_practice/Pods-combine_swiftUI_practice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-combine_swiftUI_practice/Pods-combine_swiftUI_practice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-combine_swiftUI_practice/Pods-combine_swiftUI_practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4BEDE39A2A812C7100E49B99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BEDE3B72A8133EF00E49B99 /* DataModel.swift in Sources */,
 				4BEDE3A42A812C7100E49B99 /* ContentView.swift in Sources */,
 				4BEDE3A22A812C7100E49B99 /* combine_swiftUI_practiceApp.swift in Sources */,
+				4BEDE3B52A8133BF00E49B99 /* ViewModel.swift in Sources */,
+				4BEDE3B32A8132F800E49B99 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +365,7 @@
 		};
 		4BEDE3AD2A812C7100E49B99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A7156FBD4023623367C161 /* Pods-combine_swiftUI_practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +395,7 @@
 		};
 		4BEDE3AE2A812C7100E49B99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ED5E4C7C6AC99181CD24236 /* Pods-combine_swiftUI_practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
